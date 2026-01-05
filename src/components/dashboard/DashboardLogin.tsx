@@ -19,7 +19,7 @@ export const DashboardLogin = ({ onLoginSuccess }: DashboardLoginProps) => {
     setIsLoading(true);
 
     try {
-      const fetchResult = await axios.post("https://portfolio-backend-1-cxsk.onrender.com/api/login", {
+      const fetchResult = await axios.post("https://portfolio-backend-2-ndo2.onrender.com/api/login", {
         password: password,
       });
 

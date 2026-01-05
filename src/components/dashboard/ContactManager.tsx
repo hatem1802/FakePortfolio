@@ -18,7 +18,7 @@ export const ContactManager = () => {
   const { toast } = useToast();
 
   const fetchContact = async () => {
-    fetch("https://portfolio-backend-1-cxsk.onrender.com/api/contacts")
+    fetch("https://portfolio-backend-2-ndo2.onrender.com/api/contacts")
       .then((res) => res.json())
       .then(data => setContact(data))
   };
@@ -33,7 +33,7 @@ export const ContactManager = () => {
   ) => {
     try {
       const editContact = await axios.put(
-        `https://portfolio-backend-1-cxsk.onrender.com/api/contacts/${id}`,
+        `https://portfolio-backend-2-ndo2.onrender.com/api/contacts/${id}`,
         updatedContact
       );
 

@@ -5,9 +5,9 @@
   "homepage": "https://hatem1802.github.io/FakePortfolio",
   "type": "module",
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
-    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "node api.js && vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",

@@ -14,10 +14,10 @@ const Projects = () => {
     const fetchProjects = async () => {
       setIsLoading(true);
       try {
-        fetch("https://portfolio-backend-1-cxsk.onrender.com/api/projects")
+        fetch("https://portfolio-backend-2-ndo2.onrender.com/api/projects")
           .then((res) => res.json())
           .then((data) => setProjects(data));
-        fetch("https://portfolio-backend-1-cxsk.onrender.com/api/categs")
+        fetch("https://portfolio-backend-2-ndo2.onrender.com/api/categs")
           .then((res) => res.json())
           .then((data) => setCategories(data));
       } catch (error) {

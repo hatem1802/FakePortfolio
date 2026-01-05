@@ -7,7 +7,7 @@ const About = () => {
   useEffect(() => {
     try {
       setIsLoading(true);
-      fetch("https://portfolio-backend-1-cxsk.onrender.com/api/skills")
+      fetch("https://portfolio-backend-2-ndo2.onrender.com/api/skills")
         .then((res) => res.json())
         .then((data) => setSkills(data));
     } catch (err) {

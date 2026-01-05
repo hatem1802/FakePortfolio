@@ -16,7 +16,7 @@ const Contact = () => {
     const fetchContacts = () => {
       setIsLoading(true);
       try {
-        fetch("https://portfolio-backend-1-cxsk.onrender.com/api/contacts")
+        fetch("https://portfolio-backend-2-ndo2.onrender.com/api/contacts")
           .then((res) => res.json())
           .then((data) => setContacts(data));
       } catch (err) {
